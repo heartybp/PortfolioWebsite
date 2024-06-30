@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: linear-gradient(145deg, #e0fcff, #c1c8f6, #ffc8e4, #ffffff);
+}
+
+
+/* --------------- NavBar Styling ------------------ */
+.navbar{
+    margin-top:20px;
+    height:50px;
+    display:flex;
+    justify-content:center;
+}
+
+.navbar .container{
+    background: rgba(255, 255, 255, 0.6);
+    height:50px;
+    border-radius: 50px;
+    width:550px;
+    margin-left:30px;
+    margin-right:30px;
+
+    display: flex;
+    align-items:center;
+
+}
+
+.navbar .container ul{
+    display:flex;
+    /* align-items:center; */
+    list-style-type: none;
+    margin:auto;
+}
+
+.navbar ul li{
+    font-size:20px;
+    margin-left: 15px;
+    margin-right:15px;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:#7c6fb1;
+}
+
+.navbar a:hover{
+    color:#bab0e2;
+    transition: all 0.2s ease-in-out;
+}
+
+/* --------------- Heading Styling ------------------ */
+
+.header{
+    display:flex;
+    justify-content: center;
+    margin-top:50px;
+}
+
+.header .container{
+            /* background:white; */
+
+    width:75%;
+    /* margin-left:100px;
+    margin-right:100px; */
+
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    /* flex-wrap:wrap; */
+}
+
+.header .heading{
+    padding-top:100px;
+    max-width:60%;
+                /* background:gray; */
+}
+
+
+.heading h2{
+    font-size:50px;
+    color:#988cc8;
+    line-height:1em;
+
+}
+.heading h1{
+    font-size:60px;
+    line-height:1.2em;
+    margin-bottom: 20px;
+    /* color:#b6acdf; */
+    color: #ffffff; /* Base color */
+            text-shadow: 
+                2px 2px 1px rgba(189, 167, 218, 0.793),  
+                4px 4px 4px rgba(142, 153, 224, 0.945),  
+                2px 4px 1px rgba(179, 157, 211, 0.758);  
+}
+
+.heading p{
+    padding-left:5px;
+    font-size:20px;
+    color: #6958ae;
+}
+
+.header img{
+    border-radius:50%;
+    width:275px;
+    height:auto;
+    margin-left:40px;
+    box-shadow: 40px 35px #9c92c5;
+}
