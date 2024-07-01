@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 * {
     box-sizing: border-box;
@@ -7,12 +7,16 @@
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:"Nunito", sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    background: linear-gradient(145deg, #e0fcff, #c1c8f6, #ffc8e4, #ffffff);
+    background: linear-gradient(145deg, #fef7df, #dedbe5, #fff3cb);
+    /* linear-gradient(145deg, #e0fcff, #c1c8f6, #ffc8e4, #ffffff); */
 }
 
+.landing{
+    height:100vh;
+}
 
 /* --------------- NavBar Styling ------------------ */
 .navbar{
@@ -23,7 +27,7 @@ body{
 }
 
 .navbar .container{
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(224, 218, 215, 0.6);
     height:50px;
     border-radius: 50px;
     width:550px;
@@ -50,11 +54,11 @@ body{
 
 .navbar a{
     text-decoration:none;
-    color:#7c6fb1;
+    color:#66617c;
 }
 
 .navbar a:hover{
-    color:#bab0e2;
+    color:#a2a0aa;
     transition: all 0.2s ease-in-out;
 }
 
@@ -63,7 +67,7 @@ body{
 .header{
     display:flex;
     justify-content: center;
-    margin-top:50px;
+    /* margin-top:50px; */
 }
 
 .header .container{
@@ -72,11 +76,12 @@ body{
     width:75%;
     /* margin-left:100px;
     margin-right:100px; */
+    padding-top:80px;
 
 
     display:flex;
     align-items:center;
-    justify-content:center;
+    justify-content:center
     /* flex-wrap:wrap; */
 }
 
@@ -89,7 +94,7 @@ body{
 
 .heading h2{
     font-size:50px;
-    color:#988cc8;
+    color:#3b3065;
     line-height:1em;
 
 }
@@ -97,18 +102,18 @@ body{
     font-size:60px;
     line-height:1.2em;
     margin-bottom: 20px;
-    /* color:#b6acdf; */
-    color: #ffffff; /* Base color */
+    color:#3b3065;
+    /* color: #ffffff;
             text-shadow: 
                 2px 2px 1px rgba(189, 167, 218, 0.793),  
                 4px 4px 4px rgba(142, 153, 224, 0.945),  
-                2px 4px 1px rgba(179, 157, 211, 0.758);  
+                2px 4px 1px rgba(179, 157, 211, 0.758);   */
 }
 
 .heading p{
     padding-left:5px;
     font-size:20px;
-    color: #6958ae;
+    color: #615495;
 }
 
 .header img{
@@ -121,11 +126,24 @@ body{
 
 .flip-card {
     border-radius:50%;
-    background-color: transparent;
+    background: linear-gradient(to bottom right,#faf9f4, #d6c5c5);
     width: 300px;
     height: 300px;
     perspective: 1000px;
-    box-shadow: 40px 35px #9c92c5
+    box-shadow: 40px 35px #de7070;
+
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(15px); }
+    100% { transform: translateY(0px); }
 }
   
 .flip-card-inner {
