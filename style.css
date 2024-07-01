@@ -70,7 +70,10 @@ body{
             /* background:white; */
 
     /* max-width:70%; */
-    width:900px;
+    /* width:900px; */
+
+    width: 100%; /* Use a percentage width for responsiveness */
+    max-width: 900px; /* Maximum width */
 
 
     display:flex;
@@ -114,8 +117,8 @@ body{
     border-radius:50%;
     /* width:275px;
     height:auto;
-    margin-left:40px;
-    box-shadow: 40px 35px #9c92c5; */
+    margin-left:40px; */
+    /* box-shadow: 40px 35px #9c92c5; */
 }
 
 /* ------------------------- Flip card ------------------------- */
@@ -167,6 +170,114 @@ body{
 }
 
 /* --------------- Exp-Edu ------------------ */
+
+/* .exp-edu{
+    
+} */
+
 .exp-edu .container{
-    background-color:white;
+    width: 90%; /* Use a percentage width for responsiveness */
+    max-width: 1200px; /* Maximum width */
+
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius:30px;
+    /* width:1200px; */
+    margin:auto;
+
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.experience, .education{
+    margin-top:70px;
+    margin-bottom:70px;
+
+    padding-left:70px;
+    padding-right:70px;
+
+    width:50%;
+}
+
+/* .education{
+    margin-top:70px;
+    margin-bottom:70px;
+
+    padding-left:50px;
+    padding-right:50px;
+
+    width:50%;
+} */
+
+.experience h1, .education h1{
+    font-size:45px;
+}
+
+.experience h2, .education h2{
+    margin-top:20px;
+}
+
+.experience h3, .education h3{
+    margin-bottom:10px;
+}
+
+.experience ul{
+    padding-left:20px;
+}
+
+.experience li{
+    margin-bottom:10px;
+}
+
+#view-linkedin{
+    margin-top:20px;
+    font-size: 20px;
+}
+
+.edu-icons{
+    display:flex;
+    margin-top:20px;
+}
+
+/* .edu-icons .img{
+    width:100px;
+    height:auto;
+} */
+
+.uci-classes{
+    margin-left:20px;
+    display:flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
+
+.uci-classes .uci-class{
+    display:flex;
+    align-items:center;
+    height:25px; 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+    color:#fff;
+    background:#b5b2c3;
+    border-radius:30px;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .experience, .education {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        
+    }
+
+    .experience{
+        margin-bottom:20px;
+    }
+
+    .education{
+        margin-top:20px;
+    }
+
 }
