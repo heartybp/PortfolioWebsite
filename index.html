@@ -12,13 +12,13 @@
         <div class="container">
             <ul>
                 <li>
-                    <a href="#">About</a>
+                    <a href="#">Home</a>
                 </li>
                 <li>
-                    <a href="#">Experience</a>
+                    <a href="#scroll-edu-exp">Experience</a>
                 </li>
                 <li>
-                    <a href="#">Projects</a>
+                    <a href="#scroll-projects">Projects</a>
                 </li>
                 <li>
                     <a href="#">Contact</a>
@@ -32,8 +32,13 @@
         <div class="container">
             <div class="heading">
                 <h2>Hello! I'm</h2>
-                <h1>Hearty Parrenas</h1>
-                <p>Im an aspiring software engineer and a rising senior studying Computer Science at UC Irvine. Some of my interests include fullstack development, UI/UX design, and machine learning.</p>
+                <h1>Hearty Parrenas.</h1>
+                <p>I’m a rising senior studying computer science with a 
+                    specialization in Information Systems. I have a passion 
+                    for fullstack software development and I’m always looking 
+                    for opportunities to grow and evolve my skills. In my free 
+                    time, I enjoy playing pickleball and spending time with friends.
+                </p>
             </div>
 
             <div class="flip-card">
@@ -42,7 +47,7 @@
                     <img src="icons\avatar-sprite.png" alt="Avatar" style="width:300px;height:300px;">
                   </div>
                   <div class="flip-card-back">
-                       <img src="icons\avatar-headshot.jpeg" alt="Avatar" style="width:300px;height:300px;">
+                       <img src="icons\avatar-headshot.jpg" alt="Avatar" style="width:300px;height:300px;">
                   </div>
                 </div>
             </div>
@@ -50,107 +55,123 @@
         </div>
     </header>
 
+    <br><br>
+
+    <div id="scroll-edu-exp"></div>
     <div class="exp-edu">
-        <div class="container">
-            <div class="experience">
+        
+        <div class="education">
+            <div class="edu-content">
+                <h1>Education</h1>
+                <h2>University of California, Irvine</h2>
+                <h3>B.S. Computer Science | Current - 2025</h3>
+                <p>Relevant Coursework: Data Structures, Information Retrieval,
+                    Computer Architecture, Database Management, Software Testing, 
+                    Human Computer Interaction
+                </p>
+
+                <br>
+                <h2>Los Angeles Valley College</h2>
+                <h3>Computer Science | Honors | GPA: 3.88</h3>
+            </div>
+            
+        </div>
+
+        <div class="experience">
+            <div class="exp-content">
                 <h1>Experience</h1>
-                <h2>NASA L'Space Program</h2>
-                <h3>Student Participant</h3>
-                <ul>
-                    <li>Collaborated with a team of students under a JPL mentor to design a spacecraft mission concept analyzing a Near-Earth Object asteroid.</li>
-                    <li>Co-authored a comprehensive 186-page preliminary design review document.</li>
-                </ul>
 
                 <h2>Break Through Tech</h2>
                 <h3>Machine Learning Fellow</h3>
-                <ul>
-                    <li>Currently enrolled in a Machine Learning Foundations course by eCornell, complemented by in-person labs at UCLA.</li>
-                    <li>Gaining expertise in machine learning techniques such as supervised and unsupervised learning, regression, classification, clustering, and decision trees.</li>
-                </ul>
 
-                <p id="view-linkedin"><b>...view more on my <a href="https://linkedin.com">Linkedin</a></b></p>
+                <br>
 
+                <h2>NASA L'Space</h2>
+                <h3>Program Participant</h3>
+
+                <br>
+
+                <p><i>
+                    view more on <a href="https://www.linkedin.com/in/hearty-parrenas/">LinkedIn</a>
+                    <!-- <br>
+                    or download my <a href="">Resume</a> -->
+                </i></p>
+                <img src="icons\anteater.png" alt="" width="150" height="110">
+            
             </div>
-
-            <div class="education">
-                <div class="edu-uci">
-                    <h1>Education</h1>
-                    <h2>University of California, Irvine</h2>
-                    <h3>B.S. Computer Science | Current - Dec. 2025</h3>
-                </div>
-
-                <div class="edu-icons">
-                    <img src="icons\anteater.png" alt="" width="200" height="100">
-                    <div class="uci-classes">
-                        <div class="uci-class">
-                            Data Structures
-                        </div>
-                        <div class="uci-class">
-                            Information Retrieval
-                        </div>
-                        <div class="uci-class">
-                            Computer Architecture
-                        </div>
-                        <div class="uci-class">
-                            C++
-                        </div>
-                        <div class="uci-class">
-                            Database Management
-                        </div>
-                        <div class="uci-class">
-                            Software Testing
-                        </div>
-                        <div class="uci-class">
-                            UI/UX Design
-                        </div>
-                    </div>
-                </div>
-
-                <div class="edu-lavc">
-                    <h2>Los Angeles Valley College</h2>
-                    <h3>Computer Science | Honors | GPA: 3.88 </h3>
-                </div>
-
-            </div>
-
         </div>
     </div>
 
-    <projects class="projects">
-        <h1>Projects</h1>
-        <div class="container">
-            <div class="card">
-                <div class="preview">
+    <div id="scroll-projects"></div>
+    
+    <div class="projects-section">
 
+        <div class="projects">
+            <div class="project">
+                <div class="preview">
+                    <img id="preview-img" src="icons\healthpro.png" alt="Preview of HealthPro Project">
                 </div>
-                <h3>Project Name</h3>
-                <p>This is a short description of the project.This is a short description of the project.This is a short description of the project.This is a short description of the project.</p>
-                <a href="#">Proj. Link</a>
+    
+                <div class="proj-details">
+                    <a href="https://github.com/EinarGatc/Medical-Search-Engine"><h2>HealthPro Search Engine</h2></a>
+                    
+                    <p><b><em>Python, React.js, OpenAI API, Regex, BeautifulSoup</em></b></p>
+                    <p>The HealthPro Search Engine incorporates 
+                        web crawler and search engine functionalities with the goal of providing
+                        a comprehensive platform for users to search for information and treatments 
+                        related to common cold, flu, and COVID-19. The frontend utilizes React.js, 
+                        with backend and database development in 
+                        progress. API integration includes the OpenAI API to generate page 
+                        summaries for search queries.
+                    </p>
+                </div>
+            </div>
+    
+    
+            <div class="project">
+                <div class="preview">
+                    <img id="preview-img" src="icons\spotlyric.png" alt="Preview of SpotLyrics Project">
+                </div>
+    
+                <div class="proj-details">
+                    <a href="https://github.com/heartybp/SpotLyric"><h2>SpotLyric</h2></a>
+                    
+                    <p><b><em>Python, Flask, Spotify API</em></b></p>
+                    <p>Developed a Flask web application that allows users to search for their 
+                        favorite songs and retrieve relevant track information and statistics. 
+                        Additionally, it utilizes the LyricsGenius API to fetch and display corresponding song lyrics.
+                    </p>
+                </div>
             </div>
 
-            <div class="card">
+
+            <div class="project">
                 <div class="preview">
-
+                    <img id="preview-img" src="icons\portfolio.png" alt="Portfolio Project">
                 </div>
-                <h3>Project Name</h3>
-                <p>This is a short description of the project.This is a short description of the project.This is a short description of the project.This is a short description of the project.</p>
-                <a href="#">Proj. Link</a>
-            </div>
-
-            <div class="card">
-                <div class="preview">
-
+    
+                <div class="proj-details">
+                    <h2></h2>
+                    <p>Other projects currently in progress! Right now, I'm building more fullstack MERN projects. Check back again soon.
+                    </p>
                 </div>
-                <h3>Project Name</h3>
-                <p>This is a short description of the project.This is a short description of the project.This is a short description of the project.This is a short description of the project.</p>
-                <a href="#">Proj. Link</a>
             </div>
-
         </div>
-    </projects>
+
+    </div>
+
+    <div class="footer-note">
+        <p>© 2024 Hearty Parrenas. All rights reserved.</p>
+    </div>
+    
+
+    <!-- <div class="footer">
+        <div class="footer-details">
+        </div>
+    </div> -->
 
 
 
-
+    <script src="main.js"></script> 
 </body>
 </html>

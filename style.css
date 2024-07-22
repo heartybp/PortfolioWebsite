@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -7,16 +8,16 @@
 }
 
 body{
-    font-family:"Nunito", sans-serif;
+    font-family: "Rubik", sans-serif;
     font-size: 16px;
-    line-height: 1.5;
-    background: linear-gradient(145deg, #fef7df, #dedbe5, #fff3cb);
+    line-height: 1.8em;
+    background: linear-gradient(145deg, #fff6d7, #ded8ea, #fff3cb);
     /* linear-gradient(145deg, #e0fcff, #c1c8f6, #ffc8e4, #ffffff); */
 }
 
 /* --------------- NavBar Styling ------------------ */
 .navbar{
-    margin-top:20px;
+    margin-top:30px;
     height:50px;
     display:flex;
     justify-content:center;
@@ -26,9 +27,13 @@ body{
     background: rgba(224, 218, 215, 0.6);
     height:50px;
     border-radius: 50px;
-    width:550px;
-    /* margin-left:30px;
-    margin-right:30px; */
+    min-width:300px;
+
+    padding-left:30px;
+    padding-right:30px;
+
+    margin-left:30px;
+    margin-right:30px;
 
     display: flex;
     align-items:center;
@@ -53,8 +58,18 @@ body{
 }
 
 .navbar a:hover{
-    color:#a2a0aa;
+    color:#c3c1c9;
     transition: all 0.2s ease-in-out;
+}
+
+/* nav-bar scroll */
+
+#scroll-edu-exp{
+    padding-bottom:100px;
+}
+
+#scroll-projects{
+    padding-bottom:60px;
 }
 
 /* --------------- Heading Styling ------------------ */
@@ -62,63 +77,52 @@ body{
 .header{
     display:flex;
     justify-content: center; 
-    padding-top:100px;
-    padding-bottom:215px;
+    padding-top:80px;
+    padding-bottom:170px;
+    /* min-width:600px; */
 }
 
 .header .container{
-            /* background:white; */
-
-    /* max-width:70%; */
-    /* width:900px; */
-
     width: 100%; /* Use a percentage width for responsiveness */
-    max-width: 900px; /* Maximum width */
-
+    max-width: 1200px; /* Maximum width */
 
     display:flex;
     align-items:center;
     justify-content:center;
-    flex-wrap:wrap;
 }
 
 .header .heading{
-    padding-top:100px;
+    padding-top:80px;
+    padding-right:30px;
     max-width:60%;
-                /* background:gray; */
+    min-width:300px;
 }
 
 
 .heading h2{
     font-size:50px;
+    font-weight:300;
     color:#3b3065;
     line-height:1em;
 
 }
 .heading h1{
     font-size:60px;
+    font-weight:600;
     line-height:1.2em;
     margin-bottom: 20px;
     color:#3b3065;
-    /* color: #ffffff;
-            text-shadow: 
-                2px 2px 1px rgba(189, 167, 218, 0.793),  
-                4px 4px 4px rgba(142, 153, 224, 0.945),  
-                2px 4px 1px rgba(179, 157, 211, 0.758);   */
 }
 
 .heading p{
     padding-left:5px;
     font-size:20px;
     color: #615495;
+    line-height: 1.8em;
 }
 
 .header img{
     border-radius:50%;
-    /* width:275px;
-    height:auto;
-    margin-left:40px; */
-    /* box-shadow: 40px 35px #9c92c5; */
 }
 
 /* ------------------------- Flip card ------------------------- */
@@ -128,14 +132,15 @@ body{
     overflow: hidden;
 
     border-radius: 50%;
-    background-color: transparent;
+    background-color: #dbd7d8;
     width: 300px;
     height: 300px;
     perspective: 1000px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
     animation: floating 3s infinite ease-in-out;
     margin-left: 30px;
-    margin-top: 30px;
+
+    box-shadow:45px 45px 2px#c9c4d4;
 }
 
 @keyframes floating {
@@ -171,113 +176,201 @@ body{
 
 /* --------------- Exp-Edu ------------------ */
 
-/* .exp-edu{
-    
-} */
-
-.exp-edu .container{
+.exp-edu{
     width: 90%; /* Use a percentage width for responsiveness */
-    max-width: 1200px; /* Maximum width */
+    max-width: 1100px; /* Maximum width */
 
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius:30px;
-    /* width:1200px; */
     margin:auto;
 
     display:flex;
-    flex-wrap:wrap;
+    justify-content:center;
+    padding-bottom:150px;
 }
 
 .experience, .education{
-    margin-top:70px;
-    margin-bottom:70px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background-color:rgba(255, 255, 255, 0.75);
+    border-radius:15px;
 
-    padding-left:70px;
-    padding-right:70px;
+    margin:30px;
+    margin-top:20px;
+    margin-bottom:20px;
 
-    width:50%;
+    width:45%;
+    min-width:400px;
+    min-height:485px;
+    box-shadow: 5px 5px 10px #c9c4d4;
 }
 
-/* .education{
-    margin-top:70px;
-    margin-bottom:70px;
 
-    padding-left:50px;
-    padding-right:50px;
-
-    width:50%;
-} */
+.edu-content, .exp-content{
+    margin-top:60px;
+    width:80%;
+    margin-bottom:60px;
+}
 
 .experience h1, .education h1{
-    font-size:45px;
+    font-weight:600;
+    font-size:35px;
+    color:#423869;
+    margin-bottom:15px;
 }
 
 .experience h2, .education h2{
-    margin-top:20px;
+    font-weight:600;
+    color:#6756ac;
 }
 
 .experience h3, .education h3{
-    margin-bottom:10px;
+    color:rgb(168, 146, 185);
+    font-weight:500;
 }
 
-.experience ul{
-    padding-left:20px;
+.education h2, .education h3, .education p, .experience h2, .experience h3, .experience p{
+    padding-left:1px;
+    line-height: 1.6em;
+    
 }
 
-.experience li{
-    margin-bottom:10px;
+.education p{
+    line-height: 2em;
+    color:#3b3065;
 }
 
-#view-linkedin{
-    margin-top:20px;
-    font-size: 20px;
-}
-
-.edu-icons{
+.projects-section{
     display:flex;
-    margin-top:20px;
+    flex-direction:column;
+    align-items:center;
+    padding-bottom:110px;
 }
 
-/* .edu-icons .img{
-    width:100px;
-    height:auto;
-} */
-
-.uci-classes{
-    margin-left:20px;
+.projects{
+    width: 80%; /* Use a percentage width for responsiveness */
     display:flex;
-    flex-wrap: wrap;
-    gap:10px;
+    flex-direction:column;
 }
 
-.uci-classes .uci-class{
+.projects .project{
     display:flex;
     align-items:center;
-    height:25px; 
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    
-    color:#fff;
-    background:#b5b2c3;
-    border-radius:30px;
-    padding-left:10px;
-    padding-right:10px;
+    justify-content:center;
+
+    margin:25px;
+    margin-bottom:65px;
+    transition:all 0.2s ease-in-out;
 }
 
-@media screen and (max-width: 1000px) {
-    .experience, .education {
-        width: 100%;
-        padding-left: 40px;
-        padding-right: 40px;
+.project .preview{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:250px;
+    min-width:370px;
+    width:40%;
+    background-color: rgba(255, 255, 255, 0.586);
+    border-radius:15px;
+    box-shadow: 5px 5px 10px #c9c4d4;
+
+}
+
+.project:hover{
+    transform: scale(1.07);
+}
+
+#preview-img{
+    padding:10px;
+    width:100%;
+    height:100%;
+    border-radius:15px;
+}
+
+.proj-details{
+    min-width:400px;
+    width:60%;
+    padding:30px;
+
+    a{
+        text-decoration:none;
+    }
+
+    h2{
+        margin-bottom:15px;
+        font-size:30px;
+        color:#6756ac;
         
     }
 
-    .experience{
-        margin-bottom:20px;
+    h2:hover{
+        color:#b1a8d7;
+        transition: all 0.2s ease-in-out;
     }
 
-    .education{
-        margin-top:20px;
+    p{
+        color:#423869;
+        padding-bottom:7px;
+    }
+
+}
+
+.footer{
+    background: linear-gradient(145deg,#aca7b6,#ded8ea,#ded8ea, #aca7b6);
+    height:225px;
+}
+
+.footer-note{
+    text-align:center;
+    padding-bottom:40px;
+    color:#423869;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .navbar{
+        visibility:hidden;
+    }
+
+    .header{
+        padding-top:0px;
+        padding-bottom:30px;
+    }
+
+    .header .container{
+        flex-wrap:wrap;
+    }
+
+}
+
+@media screen and (max-width: 820px) {
+
+    .header{
+        padding-bottom:1px;
+        .heading{
+            padding-top:0px;
+            padding-right:0px;
+        }
+    }
+
+    .header .container{
+        flex-wrap:wrap;
+
+        .flip-card{
+            margin-top:30px;
+            box-shadow:2px 5px 10px#948f9f;
+        }
+    }
+
+    .exp-edu{
+        flex-wrap:wrap;
+        padding-bottom:60px;
+    }
+
+    .projects-section .projects .project{
+        flex-wrap:wrap;
+        margin-bottom:20px;
+
     }
 
 }
